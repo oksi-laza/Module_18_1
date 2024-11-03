@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sport_kids</title>
+</head>
+<body>
+    <h1 align="center">{{ title_h1 }}</h1>
+    <ul>
+        {% for menu_kids in menu_kids_list %}
+        <li>
+            <b>{{ menu_kids }}</b>
+            <button> КУПИТЬ<br> АБОНЕМЕНТ</button>
+        </li>
+        <br>
+        <br>
+        {% endfor %}
+    </ul>
+    <button>
+        <a href="{{ main_page }}" style="color: black; text-decoration: none; font-weight: bold">
+            ВЕРНУТЬСЯ<br> ОБРАТНО
+        </a>
+    </button>
+</body>
+</html>

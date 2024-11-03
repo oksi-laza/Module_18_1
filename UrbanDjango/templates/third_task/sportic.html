@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SPORTIC</title>
+</head>
+<body>
+    <h1 align="center">{{ title_h1 }}</h1>
+    <ul>
+        {% for menu, route in menu_dict.items %}
+        <ol>
+            <h3><a href="{{ route }}"> {{ menu }} </a></h3>
+        </ol>
+        {% endfor %}
+    </ul>
+</body>
+</html>
