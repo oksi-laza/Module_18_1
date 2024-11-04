@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{{ title_h1 }}{% endblock %}</title>
+</head>
+<body>
+    <header>
+        {% block pagename %}
+        <h1 align="center">Заголовок страницы</h1>
+        {% endblock %}
+    </header>
+
+    <nav>
+        {% block menu %}
+        <ul>
+            <ol><h3><a href="/sportic">Спорт для всех. Главная</a></h3></ol>
+            <ol><h3><a href="/sportic/sport_kids">Спортивные секции для детей</a></h3></ol>
+            <ol><h3><a href="/sportic/sport_adults">Спортивные секции для взрослых</a></h3></ol>
+        </ul>
+        {% endblock %}
+    </nav>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+</body>
+</html>

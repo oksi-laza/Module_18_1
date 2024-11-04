@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from task2.views import func_template, ClassTemplate
-from task3.views import sportic, sport_kids, sport_adults
+from task4.views import sportic, sport_kids, sport_adults
 
 
 urlpatterns = [

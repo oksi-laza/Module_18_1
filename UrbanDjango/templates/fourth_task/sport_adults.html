@@ -1,0 +1,32 @@
+{% extends 'fourth_task/menu.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    {% block pagename %}
+        <h1 align="center">{{ title_h1 }}</h1>
+    {% endblock %}
+
+    {% block content %}
+        <ul>
+            {% for menu_adults in menu_adults_list %}
+            <li>
+                <b>{{ menu_adults }}</b>
+                <button style="padding: 10px">КУПИТЬ АБОНЕМЕНТ</button>
+            </li>
+            <br>
+            {% endfor %}
+        </ul>
+        <button style="padding: 15px">
+            <a href="{{ main_page }}" style="color: black; text-decoration: none; font-weight: bold">
+                ВЕРНУТЬСЯ<br> НА ГЛАВНУЮ
+            </a>
+        </button>
+    {% endblock %}
+
+</body>
+</html>
