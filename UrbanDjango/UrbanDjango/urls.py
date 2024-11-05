@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.urls import path
 from task2.views import func_template, ClassTemplate
 from task4.views import sportic, sport_kids, sport_adults
+from task5.views import sign_up_by_html, sign_up_by_django
 
 
 urlpatterns = [
@@ -27,4 +28,6 @@ urlpatterns = [
     path('sportic/', sportic),
     path('sportic/sport_kids/', sport_kids),
     path('sportic/sport_adults/', sport_adults),
+    path('', sign_up_by_html),
+    path('django_sign_up/', sign_up_by_django),
 ]
